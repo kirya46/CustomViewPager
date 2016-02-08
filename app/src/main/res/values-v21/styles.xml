@@ -1,0 +1,17 @@
+<resources>>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <!--ActionBar status TextView in LearActivity style-->
+    <style name="ActionTextStyle" parent="@android:style/Widget.TextView"> >
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_view_status_font_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>

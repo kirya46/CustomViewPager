@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGrey"
+    android:orientation="vertical">
+
+
+    <!--<com.root.customviewpager.util.CustomViewPagerH-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/appBarLayout"-->
+        <!--android:layout_alignParentBottom="true" />-->
+
+    <com.root.customviewpager.util.CustomViewPagerV
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/fragment_button_conteiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_next_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/default_marginRight"
+            android:layout_marginLeft="-100dp"
+            android:paddingLeft="100dp"
+            android:background="@drawable/button_next_word_rectangle"
+            android:text="СЛЕДУЮЩЕЕ СЛОВО"
+            android:textSize="@dimen/button_next_font_size"
+            android:textColor="@color/colorFontBlue"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+    <!--android:background="@drawable/button_next_word_rectangle"-->
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGrey"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/mainWord"
+            android:textSize="@dimen/main_word_font_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/default_marginLeft"
+            android:layout_marginRight="@dimen/default_marginRight"
+            android:gravity="center_horizontal"
+            android:text="Lorem ipsum"
+            android:textColor="@color/colorBlack"
+
+            />
+
+
+        <TextView
+            android:id="@+id/translateWord"
+            android:textSize="@dimen/translate_word_text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mainWord"
+            android:layout_marginLeft="@dimen/default_marginLeft"
+            android:layout_marginRight="@dimen/default_marginRight"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/translate_text_paddingTop"
+            android:text="sunt in culpa qui officia deserunt mollit anim id est laborum"
+            android:singleLine="false"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/default_marginLeft"
+        android:layout_marginRight="@dimen/default_marginRight"
+        android:paddingTop="@dimen/example_layout_paddingTop"
+        >
+
+        <TextView
+            android:id="@+id/textViewExample1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            android:textSize="@dimen/example_text_font_size" />
+
+        <TextView
+            android:id="@+id/textViewExample2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/example_text_marginTop"
+            android:layout_marginBottom="@dimen/button_next_height"
+            android:text="Ut enim ad minim veniam, quis nostrud exercitation."
+            android:textSize="@dimen/example_text_font_size" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--style="?android:textAppearanceMedium"-->

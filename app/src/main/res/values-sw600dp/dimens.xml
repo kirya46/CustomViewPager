@@ -1,0 +1,127 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--CheckKnowledge activity-->
+    <dimen name="count_text_pddingTop">13dp</dimen>
+    <dimen name="checkactivity_margin_from_toolbar">300dp</dimen>
+    <dimen name="chronometr_marginTop">25dp</dimen>
+    <dimen name="howitwork_marginTop">25dp</dimen>
+    <dimen name="default_marginLeft">30dp</dimen>
+    <dimen name="default_marginRight">30dp</dimen>
+    <dimen name="invite_text_paddingTop">50dp</dimen>
+    <dimen name="invite_button_marginTop">20dp</dimen>
+    <dimen name="invite_button_marginBottom">50dp</dimen>
+    <dimen name="invite_button_height">60dp</dimen>
+    <dimen name="invite_button_width">575dp</dimen>
+    <dimen name="progress_bar_height">10dp</dimen>
+
+    <dimen name="count_text_font_size">20sp</dimen>
+    <dimen name="main_text_font_size">35sp</dimen>
+    <dimen name="chronometr_text_size">70sp</dimen>
+    <dimen name="howitwork_font_size">19sp</dimen>
+    <dimen name="invite_text_font_size">26sp</dimen>
+    <dimen name="invite_button_font_size">25sp</dimen>
+
+    <!--LearnActivity activity-->
+    <dimen name="button_next_height">124dp</dimen>
+    <dimen name="button_next_marginBottom">20dp</dimen>
+    <dimen name="button_next_paddingBottom">25dp</dimen>
+    <dimen name="button_next_pddingTop">25dp</dimen>
+    <dimen name="button_next_font_size">19sp</dimen>
+    <dimen name="text_view_status_font_size">19sp</dimen>
+
+
+    <!--LearnActivity fragment-->
+    <dimen name="translate_text_paddingTop">68dp</dimen>
+    <dimen name="example_layout_paddingTop">79dp</dimen>
+    <dimen name="example_text_marginTop">37dp</dimen>
+    <dimen name="example_text_marginBottom">20dp</dimen>
+    <dimen name="main_word_font_size">59sp</dimen>
+    <dimen name="translate_word_text_size">27sp</dimen>
+    <dimen name="example_text_font_size">19sp</dimen>
+
+    <!--MainActivity activity-->
+    <dimen name="button_start_height">80dp</dimen>
+    <dimen name="button_start_marginTop">28dp</dimen>
+    <dimen name="button_start_marginBottom">28dp</dimen>
+    <dimen name="list_divider_height">15dp</dimen>
+    <dimen name="button_start_font_size">40sp</dimen>
+
+    <!--MainActivity list item-->
+    <dimen name="list_item_height">175dp</dimen>
+    <dimen name="circle_progress_wight">80dp</dimen>
+    <dimen name="circle_progress_height">80dp</dimen>
+    <dimen name="item_marginTop">36dp</dimen>
+    <dimen name="item_marginBottom">36dp</dimen>
+    <dimen name="circle_progress_stroke_width">9dp</dimen>
+    <dimen name="description_text_marginTop">6dp</dimen>
+    <dimen name="buy_case_paddingRight">32dp</dimen>
+    <dimen name="buy_case_paddingLeft">32dp</dimen>
+    <dimen name="button_buy_width">106dp</dimen>
+    <dimen name="button_buy_height">44dp</dimen>
+    <dimen name="button_pay_width">41dp</dimen>
+    <dimen name="button_pay_height">38dp</dimen>
+    <dimen name="count_text_marginTop">18dp</dimen>
+    <dimen name="item_shadow_bottom_height">5dp</dimen>
+    <dimen name="circle_progress_font_size">24sp</dimen>
+    <dimen name="item_title_text_font_size">28sp</dimen>
+    <dimen name="item_description_text_font_size">24sp</dimen>
+    <dimen name="button_buy_font_size">26sp</dimen>
+    <dimen name="count_description_text_font_size">20sp</dimen>
+    <dimen name="item_shadow_top_height">2dp</dimen>
+    <dimen name="item_facebook_description_text_font_size">24sp</dimen>
+    <!--footer-->
+    <dimen name="image_facebook_paddingRight">32dp</dimen>
+    <dimen name="image_facebook_paddingLeft">32dp</dimen>
+    <dimen name="image_facebook_paddingTop">36dp</dimen>
+    <dimen name="image_facebook_paddingBottom">36dp</dimen>
+    <dimen name="main_footer_height">64dp</dimen>
+    <dimen name="main_footer_font_size">18sp</dimen>
+    <dimen name="main_footer_text_marginTop">8dp</dimen>
+    <dimen name="intem_number_font_size">28sp</dimen>
+    <!--timer fragment-->
+    <dimen name="fragment_timer_paddingBottom">14dp</dimen>
+    <dimen name="fragment_timer_marginBottom">23dp</dimen>
+    <dimen name="textView_timer_marginTop">21dp</dimen>
+    <dimen name="textView_timer_marginBottom">5dp</dimen>
+    <dimen name="imageView_spam_width">29dp</dimen>
+    <dimen name="imageView_spam_height">29dp</dimen>
+    <dimen name="textView_timer_title_font_size">26sp</dimen>
+    <dimen name="textView_timer_font_size">58sp</dimen>
+
+    <!--InviteActivity-->
+    <dimen name="package_title_first_margin_top">45dp</dimen>
+    <dimen name="package_title_second_margin_top">19dp</dimen>
+    <dimen name="button_facebook_invite_margin_top">38dp</dimen>
+    <dimen name="package_description_first_margin_top">17dp</dimen>
+    <dimen name="package_description_second_margin_top">17dp</dimen>
+    <dimen name="package_description_second_margin_bottom">45dp</dimen>
+    <dimen name="button_facebook_invite_width">490dp</dimen>
+    <dimen name="button_facebook_invite_height">66dp</dimen>
+    <dimen name="still_case_layout_height">107dp</dimen>
+    <dimen name="colums_title_layout_margin_top">77dp</dimen>
+    <dimen name="still_case_layout_first">11dp</dimen>
+    <dimen name="still_case_layout_second_margin_top">8dp</dimen>
+    <dimen name="package_padding_right">80dp</dimen>
+
+    <dimen name="package_title_font_size">30sp</dimen>
+    <dimen name="text_view_column_package_font_size">20sp</dimen>
+    <dimen name="still_case_first_text_name_font_size">28sp</dimen>
+    <dimen name="still_case_first_text_count_font_size">41sp</dimen>
+    <dimen name="package_description_font_size">24sp</dimen>
+
+    <!--ResultCheckActivity-->
+    <dimen name="result_check_progress_bar_marginTop">88dp</dimen>
+    <dimen name="result_check_progress_bar_height">329dp</dimen>
+    <dimen name="result_check_progress_bar_stroke_weidth">12dp</dimen>
+    <dimen name="result_check_title_marginTop">30dp</dimen>
+    <dimen name="result_check_count_font_size">150sp</dimen>
+    <dimen name="result_check_title_font_size">36sp</dimen>
+    <dimen name="result_check_when_text_view_font_size">21sp</dimen>
+
+
+
+</resources>
