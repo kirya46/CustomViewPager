@@ -16,8 +16,8 @@ import com.root.customviewpager.R;
 import com.root.customviewpager.data.model.Word;
 
 
-public class ActivityFragment extends Fragment {
-    private static final String TAG = "ActivityFragment";
+public class MainActivityFragment extends Fragment {
+    private static final String TAG = "MainActivityFragment";
 
     public static final String ARG_PAGE = "page";
     public static final String ARG_WORD = "word";
@@ -27,8 +27,8 @@ public class ActivityFragment extends Fragment {
     Word word;
     private TextView tvStatus;
 
-    public static ActivityFragment create(int pageNumber, Word word) {
-        ActivityFragment fragment = new ActivityFragment();
+    public static MainActivityFragment create(int pageNumber, Word word) {
+        MainActivityFragment fragment = new MainActivityFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, pageNumber);
         args.putSerializable(ARG_WORD, word);
@@ -36,7 +36,7 @@ public class ActivityFragment extends Fragment {
         return fragment;
     }
 
-    public ActivityFragment() {
+    public MainActivityFragment() {
     }
 
     @Override

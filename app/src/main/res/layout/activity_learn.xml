@@ -7,21 +7,21 @@
     android:orientation="vertical">
 
 
-    <!--<com.root.customviewpager.util.CustomViewPagerH-->
-        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--android:id="@+id/pager"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_below="@+id/appBarLayout"-->
-        <!--android:layout_alignParentBottom="true" />-->
-
-    <com.root.customviewpager.util.CustomViewPagerV
+    <com.root.customviewpager.util.CustomViewPagerH
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/appBarLayout"
         android:layout_alignParentBottom="true" />
+
+    <!--<com.root.customviewpager.util.CustomViewPagerV-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/appBarLayout"-->
+        <!--android:layout_alignParentBottom="true" />-->
 
     <LinearLayout
         android:id="@+id/fragment_button_conteiner"

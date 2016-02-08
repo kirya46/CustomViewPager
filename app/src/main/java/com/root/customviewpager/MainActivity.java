@@ -4,7 +4,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,19 +11,16 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.Interpolator;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.root.customviewpager.data.MockData;
 import com.root.customviewpager.data.model.Word;
-import com.root.customviewpager.fragments.ActivityFragment;
-import com.root.customviewpager.util.CustomViewPagerV;
-import com.root.customviewpager.util.FixedSpeedScroller;
+import com.root.customviewpager.fragments.MainActivityFragment;
+import com.root.customviewpager.util.CustomSpeedScroller;
+import com.root.customviewpager.util.CustomViewPagerH;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
     private PagerAdapter mPagerAdapter;
 
-//    private CustomViewPagerH mPager;  // Horizontal scroll, make change in xml  file
-    private CustomViewPagerV mPager;  // Vertical scroll, make change in xml  file
+    private CustomViewPagerH mPager;  // Horizontal scroll, make change in xml  file
+//    private CustomViewPagerV mPager;  // Vertical scroll, make change in xml  file
 
-    ActivityFragment learnActivityFragment;
+    MainActivityFragment learnActivityFragment;
 
     ArrayList<Word> mWordList;
 
@@ -69,31 +65,41 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        mPager = (CustomViewPagerH) findViewById(R.id.pager);
-        mPager = (CustomViewPagerV) findViewById(R.id.pager);
+        mPager = (CustomViewPagerH) findViewById(R.id.pager);
+//        mPager = (CustomViewPagerV) findViewById(R.id.pager);
 
 
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
 
 
         mPager.setAdapter(mPagerAdapter);
-        mPager.setPagingEnabled(false); //disable touch scroll
+        mPager.setPagingEnabled(true); //disable touch scroll
 
         /** Set scroller duration */
         // do 2/3/2016 extract to scroller class  ( in CustomViewPagerV  in postInitViewPager() method fix from Scroller custom duration to FixedSpeedScroller
 
+//        try {
+//            Field mScroller;
+//            mScroller = ViewPager.class.getDeclaredField("mScroller");
+//            mScroller.setAccessible(true);
+//            Interpolator sInterpolator = new AccelerateInterpolator();
+//            FixedSpeedScroller scroller = new FixedSpeedScroller(mPager.getContext(), sInterpolator);
+//            scroller.setmDuration(500);
+//            mScroller.set(mPager, scroller);
+//        } catch (NoSuchFieldException e) {
+//        } catch (IllegalArgumentException e) {
+//        } catch (IllegalAccessException e) {
+//        }
+
+
         try {
-            Field mScroller;
-            mScroller = ViewPager.class.getDeclaredField("mScroller");
-            mScroller.setAccessible(true);
-            Interpolator sInterpolator = new AccelerateInterpolator();
-            FixedSpeedScroller scroller = new FixedSpeedScroller(mPager.getContext(), sInterpolator);
-            scroller.setmDuration(500);
-            mScroller.set(mPager, scroller);
+            CustomSpeedScroller.setScrollSpeed(mPager, 500);
         } catch (NoSuchFieldException e) {
-        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
         } catch (IllegalAccessException e) {
+            e.printStackTrace();
         }
+
 
 //        mPager.setScrollDurationFactor(5); /** set duration slow */
 
@@ -151,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             Log.d(TAG, "Position: " + position);
-            learnActivityFragment = ActivityFragment.create(position, mWordList.get(position));
+            learnActivityFragment = MainActivityFragment.create(position, mWordList.get(position));
             return learnActivityFragment;
         }
 
